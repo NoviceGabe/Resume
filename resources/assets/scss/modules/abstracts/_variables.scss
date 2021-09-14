@@ -1,0 +1,37 @@
+// color schemes
+
+$metallic-blue: #335383;
+$carolina-blue: #5ba7d1;
+$rifle-green: #444440;
+$white: #ffffff;
+
+$colors: (
+    primary: (
+        1: $metallic-blue,
+        2: $white
+        
+    ),
+
+    secondary: (
+        1: $carolina-blue,
+        2: $rifle-green,
+       
+    )
+);
+
+// typography
+$base-size: 18px;
+//$font-stack: chunkfive;
+
+// breakpoints.
+$breakpoints: (
+  xxxs: 280px,
+  xxs: 320px,
+  xs: 481px,
+  sm: 641px,
+  md: 961px,
+  lg: 1025px,
+  xlg: 1281px
+);
+
+

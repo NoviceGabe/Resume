@@ -1,0 +1,206 @@
+.l-sidebar {
+    background-color: color(primary, 1);
+    color: color(primary, 2);
+    
+     & > *{
+        display: block;
+        margin: 0 auto;
+        margin-top: 32px;
+
+        &:first-child {
+            margin-top: 60px;
+        }
+     }
+
+     h2 {
+        font-family: source_sans_pro;
+        text-transform: uppercase;
+        font-size: rem(12px);
+        letter-spacing: 4px;
+
+        @include breakpoint(lg) {
+            font-size: rem(18px);
+        }
+     }
+
+     li {
+        font-size: rem(10px);
+
+        @include breakpoint(lg) {
+            font-size: rem(16px);
+        }
+     }
+    
+}
+
+.l-contact {
+    margin-top: rem(64px);
+    ul li {
+        list-style-type: none;
+        line-height: rem(40px);
+    }
+
+    .fa {
+        font-size: rem(20px);
+        margin-right: 8px;
+
+        @include breakpoint(lg) {
+            font-size: rem(24px);
+        }
+    }
+
+    @include breakpoint(sm) {
+       h2 {
+           text-align: center;
+       }
+
+       ul {
+           margin: 0;
+           li {
+            @include flexbox($main: center, $cross: center);
+           }
+       }
+      }
+
+      @include breakpoint(lg) {
+        h2 {
+            text-align: left;
+        }
+ 
+        ul {
+            margin-top: 16px;
+            li {
+            display: block;
+            }
+        }
+       }
+}
+
+.l-contact-mobile {
+    @include flexbox($main: center, $cross: center);
+    margin-top: rem(64px);
+    ul {
+        margin: 0;
+        @include flexbox($direction: column, $main: center, $cross: center);
+        li {
+            list-style-type: none;
+            line-height: rem(32px);
+            margin-bottom: 10px;
+        }
+    }
+
+    .fa {
+        font-size: rem(32px);
+        margin-right: 4px;
+    }
+}
+
+.l-skills {
+    ul {
+        margin-top: 16px;
+        li {
+            line-height: 20px;
+        }
+    }
+}
+
+.l-main-content {
+    header > h2, 
+    section > h2 {
+        font-family: source_sans_pro_bold;
+        text-transform: uppercase;
+        color: color(secondary, 1);
+        font-size: rem(16px);
+        letter-spacing: 4px;
+
+        @include breakpoint(lg) {
+            font-size: rem(20px);
+        }
+    }
+
+    li, p {
+        font-size: rem(14px);
+        letter-spacing: 2px;
+        @include breakpoint(lg) {
+            font-size: rem(18px);
+        }
+    }
+
+    section {
+        margin-top: 16px;
+    }
+
+    section > div h2 {
+        font-size: rem(18px);
+        font-weight: bold;
+        letter-spacing: 2px;
+        margin-top: 16px;
+
+        @include breakpoint(lg) {
+            font-size: rem(22px);
+        }
+    }
+
+    section > div h3 {
+        font-size: rem(14px);
+        font-family: assistant_extra_light;
+        font-weight: 100;
+
+        @include breakpoint(lg) {
+            font-size: rem(18px);
+        }
+    }
+
+    header {
+        h1 {
+            color: color(primary, 1);
+            font-family: glacial_indifference_bold;
+            font-size: rem(32px);
+            line-height: 32px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 16px;
+
+            @include breakpoint(lg) {
+                font-size: rem(64px);
+                line-height: 64px;
+            }
+           
+        }
+        
+        hr {
+            height:0.5px;
+            width:25px; 
+            border-width:0;
+            color:color(secondary,2); 
+            background-color:color(secondary,2); 
+
+            @include breakpoint(lg) {
+                height:2px;
+                width:100px; 
+            }
+
+            @include breakpoint(sm) {
+                height:1.5px;
+                width:50; 
+            }
+        }
+
+        h2 {
+            margin-top: 16px;
+            color: color(secondary, 1);
+            font-size: rem(20px);
+            text-transform: uppercase;
+            letter-spacing: 6px;
+
+            @include breakpoint(lg) {
+                font-size: rem(32px);
+                letter-spacing: 12px;
+            }
+        }
+       
+    }
+}
+
+
+ 

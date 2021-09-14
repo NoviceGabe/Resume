@@ -1,0 +1,16 @@
+@function color($base, $key: 1) {
+    $color: map-get(map-get($colors, $base), $key);
+    @return $color;
+  }
+  
+  @function stripUnit($value) {
+      @return $value / ($value * 0 + 1);
+  }
+  @function rem($pxValue) {
+      @return #{stripUnit($pxValue) / stripUnit($base-size)}rem;
+  }
+  
+  @function em($pxValue) {
+    @return #{stripUnit($pxValue) / stripUnit($base-size)}em;
+  }
+  

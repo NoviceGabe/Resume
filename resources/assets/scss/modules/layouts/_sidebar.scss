@@ -1,0 +1,9 @@
+.l-sidebar {
+    width: 30%;
+    min-width: 20%;
+    min-height: 100vh;
+   
+    @include breakpoint(lg) {
+        padding: rem(50px);
+    }
+}
