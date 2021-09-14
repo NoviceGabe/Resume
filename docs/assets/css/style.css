@@ -1061,8 +1061,8 @@ ul {
 }
 
 .l-main-content header hr {
-  height: 0.5px;
-  width: 25px;
+  height: 1px;
+  width: 50px;
   border-width: 0;
   color: #444440;
   background-color: #444440;
@@ -1072,13 +1072,6 @@ ul {
   .l-main-content header hr {
     height: 2px;
     width: 100px;
-  }
-}
-
-@media only screen and (min-width: 641px) {
-  .l-main-content header hr {
-    height: 1.5px;
-    width: 50;
   }
 }
 
